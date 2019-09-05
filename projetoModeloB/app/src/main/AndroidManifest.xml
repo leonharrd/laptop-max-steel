@@ -9,9 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".SobreActivity"  android:label="@string/title_activity_sobre"  ></activity>
+        <activity android:name=".ConsultaActivity"  android:label="@string/title_activity_consulta"></activity>
         <activity
-            android:name=".LoginActivity"
-            android:label="Login">
+            android:name=".CadastroActivity"
+            android:label="@string/title_activity_cadastro">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,12 +21,17 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".MenuActivity"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login" />
+        <activity
             android:name=".FullscreenActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name"
-            android:theme="@style/FullscreenTheme">
-
-        </activity>
+            android:theme="@style/FullscreenTheme" />
     </application>
 
 </manifest>
